@@ -1,0 +1,109 @@
+/*FUENTES TIPOGRAFICAS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+/* -------------------------------------------------------------------------------*/
+
+/* ELIMINACION DE LOS MARGENES PREESTABLECIDOS */
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+/* -------------------------------------------------------------------------------*/
+
+
+/* IMAGEN DE FONDO */
+
+body {
+
+	background-image: url(images/fondo.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+
+	/* propiedades para hacer el fondo responsivo */
+
+    /*display: flex;*/--- /*esto no me funciona */
+	height: 75vh;
+}
+
+/* -------------------------------------------------------------------------------*/
+
+/* GRID DE TODO EL CONTENIDO PARA HACERLO RESPONSIVO */
+
+.general {
+
+	/*display: grid;
+	grid-template-columns: repeat(12, 1fr);*/
+	
+    /* explicacion del maestro*/
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 10px;*/
+
+
+}
+
+/* esto es para que las imagenes se ajusten al 100% del grid */
+.inside > img {
+	width: 100%;
+}
+
+/* esto es para que las imagenes tengan unos margenes dentro
+del grid del contenedor general */
+.inside{
+	margin: 20px;
+}
+    
+/* -------------------------------------------------------------------------*/
+
+/* MODIFICACIONES EN EL TÍTULO Y EL TEXTO */
+
+.titulo {
+	font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 40px;
+    color: #5cc9e2;
+}
+
+.informacion {
+	font-size: 23px;
+    color: white;
+}
+
+/* ------------------------------------------------------------------------*/
+
+/* ESTO ES PARA QUITARLE EL DELINEADO, LOS PUNTOS Y CABIARLE EL COLOR AL MENU */
+
+a{
+	text-decoration: none;
+
+	font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 23px;
+    color: #d1d3d4;
+}
+
+/* los puntos de la lista, list style, se quitan en la clase de la lista */
+.menuprincipal {
+	list-style: none;
+}
+
+/* cambios en la tipografía de la palabra contáctanos */
+.contactanos {
+	font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 23px;
+    color: #d1d3d4;
+
+/* ------------------------------------------------------------------*/
+
+/* AQUÍ VA LA GRID DE LA PARTE DElL MENÚ Y LAS REDES SOCIALES */
