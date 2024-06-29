@@ -80,6 +80,7 @@ a{
 }
 
 /* los puntos de la lista, list style, se quitan en la clase de la lista */
+
 .menuprincipal {
 	list-style: none;
 }
@@ -96,6 +97,8 @@ a{
 
 	margin-right: 20px;
 	margin-left: 50%;
+
+	margin-top: 100%;
 }
 
 /* especificidad de las columnas y filas que ocupa cada icono */
@@ -149,5 +152,34 @@ a{
 .general {
 	margin-top: 5%;
 }
+
+/* --------------------------------------------------------------------*/
+
+.areatituloproducto {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+	grid-gap: 10px;
+
+	ont-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+    font-size: 1.2em;
+
+	color: white;
+
+}
+
+.productos {
+	background-color: white;
+}
+
+
+.talla {
+	width: 50px;
+	background-color: white;
+}
+
+
 
 

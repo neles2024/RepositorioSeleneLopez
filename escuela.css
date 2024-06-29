@@ -129,6 +129,8 @@ a{
 
 }
 
+
+
 .informacion {
 	font-family: "Roboto", sans-serif;
     font-weight: 300;
@@ -148,6 +150,13 @@ a{
 
 .general {
 	margin-top: 5%;
+}
+
+
+.subtitulo {
+
+	color: white;
+
 }
 
 
